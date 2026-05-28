@@ -1,0 +1,32 @@
+aid: ai-dev-jobs
+name: AI Dev Jobs
+description: "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints"
+url: https://aidevboard.com/openapi.yaml
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Jobs"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Jobs
+  - Public APIs
+apis:
+  - name: AI Dev Jobs
+    description: "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints"
+    humanURL: https://aidevboard.com/openapi.yaml
+    baseURL: https://aidevboard.com/openapi.yaml
+    tags:
+      - Jobs
+    properties:
+      - type: Documentation
+        url: https://aidevboard.com/openapi.yaml
+common:
+  - type: Website
+    url: https://aidevboard.com/openapi.yaml
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
