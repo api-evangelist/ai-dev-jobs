@@ -1,0 +1,56 @@
+{
+  "api": {
+    "base_url": "https://aidevboard.com/api/v1",
+    "docs": "https://aidevboard.com/docs",
+    "openapi": "https://aidevboard.com/openapi.yaml"
+  },
+  "capabilities": [
+    "job-search",
+    "salary-data",
+    "company-directory",
+    "market-demand-research",
+    "idea-validation",
+    "api-access",
+    "mcp-server"
+  ],
+  "commerce": {
+    "agentic_payments_ready": true,
+    "catalog": "https://aidevboard.com/api/v1/catalog",
+    "checkout": "https://aidevboard.com/api/v1/checkout",
+    "featured_entrypoints": {
+      "market_demand_pack": "https://aidevboard.com/market-demand-pack"
+    },
+    "manifest": "https://aidevboard.com/.well-known/commerce.json",
+    "payment_modes": [
+      "stripe_checkout",
+      "stripe_link",
+      "link",
+      "stripe_spt"
+    ],
+    "private_preview_required": [
+      "stripe_acp",
+      "x402"
+    ],
+    "quote": "https://aidevboard.com/api/v1/quote",
+    "stripe_spt": "Supported for one-time promoted-listing checkout through POST /api/v1/checkout with a Link-issued shared_payment_granted_token.",
+    "unsupported_payment_modes": [
+      "stripe_acp",
+      "x402",
+      "mpp"
+    ]
+  },
+  "contact": "hello@aidevboard.com",
+  "description": "Job board for AI developers with current AI/ML roles, salary data, REST API, and MCP server (13 tools).",
+  "discovery": {
+    "ai_plugin": "https://aidevboard.com/.well-known/ai-plugin.json",
+    "llms_txt": "https://aidevboard.com/llms.txt",
+    "robots_txt": "https://aidevboard.com/robots.txt",
+    "sitemap": "https://aidevboard.com/sitemap.xml"
+  },
+  "mcp": {
+    "endpoint": "https://aidevboard.com/mcp",
+    "manifest": "https://aidevboard.com/.well-known/mcp.json"
+  },
+  "name": "AI Dev Jobs",
+  "url": "https://aidevboard.com"
+}

@@ -23,6 +23,10 @@ apis:
       - type: Documentation
         url: https://aidevboard.com/openapi.yaml
 common:
+  - type: AgentCard
+    url: a2a/ai-dev-jobs-a2a.yml
+    name: A2A Agent Card
+    description: Agent Card served at /.well-known/agent.json (flavored against A2A 1.0.0).
   - type: VulnerabilityDisclosure
     url: security/ai-dev-jobs-vulnerability-disclosure.yml
   - type: DomainSecurity
