@@ -2,7 +2,7 @@ aid: ai-dev-jobs
 name: AI Dev Jobs
 description: "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints"
 url: https://aidevboard.com/openapi.yaml
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-05-28'
 modified: '2026-05-28'
 x-source: public-apis/public-apis
