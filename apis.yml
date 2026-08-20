@@ -10,6 +10,9 @@ x-category: "Jobs"
 x-tier: 3
 x-tier-reason: bulk-registered-from-public-apis
 tags:
+  - Job
+  - Public APIs
+tags_raw:
   - Jobs
   - Public APIs
 apis:
@@ -18,6 +21,8 @@ apis:
     humanURL: https://aidevboard.com/openapi.yaml
     baseURL: https://aidevboard.com/openapi.yaml
     tags:
+      - Job
+    tags_raw:
       - Jobs
     properties:
       - type: Documentation
