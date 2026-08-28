@@ -2,6 +2,17 @@ aid: ai-dev-jobs
 name: AI Dev Jobs
 description: "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints"
 url: https://aidevboard.com/openapi.yaml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 created: '2026-05-28'
 modified: '2026-05-28'
