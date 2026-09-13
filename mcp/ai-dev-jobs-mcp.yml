@@ -1,0 +1,59 @@
+generated: '2026-09-11'
+method: probed
+source: https://aidevboard.com/mcp
+status: published
+server:
+  name: ai-dev-jobs
+  transport: http
+  url: https://aidevboard.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://aidevboard.com/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 20
+tools:
+- name: search_jobs
+  description: ''
+- name: get_job
+  description: ''
+- name: list_companies
+  description: ''
+- name: get_company
+  description: ''
+- name: get_stats
+  description: ''
+- name: match_jobs
+  description: ''
+- name: get_salary_data
+  description: ''
+- name: get_similar_jobs
+  description: ''
+- name: get_trending_companies
+  description: ''
+- name: list_tags
+  description: ''
+- name: analyze_application_readiness
+  description: ''
+- name: compile_job_specific_resume
+  description: ''
+- name: approve_compiled_application
+  description: ''
+- name: apply_to_job
+  description: ''
+- name: record_my_application_outcome
+  description: ''
+- name: list_my_interview_outcomes
+  description: ''
+- name: respond_to_interview_outcome
+  description: ''
+- name: list_products
+  description: ''
+- name: quote_product
+  description: ''
+- name: start_checkout
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
