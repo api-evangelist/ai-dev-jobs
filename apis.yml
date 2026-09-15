@@ -65,6 +65,8 @@ common:
     url: https://aidevboard.com/openapi.yaml
   - type: PublicAPIsListing
     url: https://github.com/public-apis/public-apis
+  - type: Support
+    url: mailto:hello@aidevboard.com
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
