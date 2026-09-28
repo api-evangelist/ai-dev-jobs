@@ -16,44 +16,82 @@ deployment:
 tools_count: 20
 tools:
 - name: search_jobs
-  description: ''
+  description: Search curated AI/ML engineering roles for free. Filter by tags (e.g. llm, pytorch), workplace
+    (remote/hybrid/onsite), global remote eligibility, experience level, salary range, or keyword. After
+    selecting a role, candidates may use compile
 - name: get_job
-  description: ''
+  description: 'Fetch full job posting by ID or slug: title, description, requirements, salary, workplace,
+    tags, apply URL. Use after search_jobs to read a specific listing.'
 - name: list_companies
-  description: ''
+  description: Returns top AI/ML companies by active role count, optionally with average salary. Useful
+    for discovering who is hiring in AI.
 - name: get_company
-  description: ''
+  description: 'Get detailed profile for an AI company: total open roles, salary range, top tags/skills,
+    workplace distribution, and apply URL. Use after list_companies or search_jobs to learn more about
+    a specific employer.'
 - name: get_stats
-  description: ''
+  description: 'Current AI Dev Jobs index statistics: total active jobs, companies hiring, median salary,
+    new jobs today / this week, and the top 10 trending tags across jobs posted in the last 7 days. This
+    is free index data and does not create a payment'
 - name: match_jobs
-  description: ''
+  description: Rank active AI/ML jobs against a candidate profile for free. Scoring combines tag overlap
+    (+2 per match), salary overlap (+3), workplace/level/type/location matches, and description keyword
+    hits. After selecting a role, candidates may use c
 - name: get_salary_data
-  description: ''
+  description: Salary benchmarks for AI/ML roles. Filter by tag (e.g. 'llm', 'pytorch'), experience level,
+    workplace type, or company. Returns average, median, p25, p75, min, max, and sample count. Useful
+    for compensation research and negotiation.
 - name: get_similar_jobs
-  description: ''
+  description: Given a job ID or slug, return active jobs that match on tag overlap, same workplace, level,
+    and job type. Ranked by similarity score (tag overlap weighted 3x). Use after search_jobs to surface
+    nearby roles — matches the /jobs/{id}/similar
 - name: get_trending_companies
-  description: ''
+  description: Companies posting the most AI/ML jobs in the last N days. Complements get_stats trending_tags_7d
+    — while that answers 'what skills are trending', this answers 'who's hiring most aggressively'. Returns
+    company name/slug/logo plus the count o
 - name: list_tags
-  description: ''
+  description: Returns all available job tags/skills with the count of active jobs for each. Use to discover
+    what tags are available for search_jobs filtering.
 - name: analyze_application_readiness
-  description: ''
+  description: Analyze candidate-verified evidence against one active job for $0 without requiring identity.
+    The transient response reports covered and unsupported public job signals without an acceptance probability,
+    does not persist candidate evidence,
 - name: compile_job_specific_resume
-  description: ''
+  description: Compile a $0 candidate-controlled ATS-oriented plain-text Markdown resume for one active
+    job using only candidate-verified evidence. Without identity, returns a transient non-persisted preview
+    that cannot be approved or submitted. With a ve
 - name: approve_compiled_application
-  description: ''
+  description: Create a short-lived, single-use authorization for one email-verified candidate, one exact
+    compiled artifact hash, and one unchanged active job. Requires principal_authorized=true, costs the
+    candidate $0, and does not submit an application.
 - name: apply_to_job
-  description: ''
+  description: Submit only the exact, visible compiled artifact after the email-verified human principal
+    approves its hash. Requires the single-use approval authorization, an API key, and principal_authorized=true.
+    Candidates and agents are never charged.
 - name: record_my_application_outcome
-  description: ''
+  description: Record one email-verified candidate's explicitly authorized, fixed-taxonomy application
+    outcome for $0. The receipt is candidate-reported, not employer-verified, creates no acceptance-rate
+    claim, and never changes organic ranking.
 - name: list_my_interview_outcomes
-  description: ''
+  description: List employer-reported interview outcomes for applications submitted with the authenticated
+    developer API key. No candidate fee is ever created.
 - name: respond_to_interview_outcome
-  description: ''
+  description: Record the authenticated candidate's independent response to an employer-reported interview.
+    Requires explicit principal authorization. Confirmation can make a fixed employer fee billable; candidates
+    and agents pay $0.
 - name: list_products
-  description: ''
+  description: 'Returns AI Dev Board''s only agent-readable commercial offer: the employer-funded Verified
+    Interview Pilot. Candidates and agents pay $0; job discovery and the evidence-backed application workflow
+    are free. The pilot is billable only after a'
 - name: quote_product
-  description: ''
+  description: Returns the deterministic, outcome-only terms for AI Dev Board's Verified Interview Pilot.
+    No candidate or agent is charged; legacy package, sponsorship, and Dossier product IDs are retired
+    from agent commerce.
 - name: start_checkout
-  description: ''
+  description: Returns a non-charging owner-review request template for the Verified Interview Pilot only.
+    It creates no request, program, candidate action, invoice, or charge. Employer identity, exact-role
+    authority, and acknowledgement of the capped 30-
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
