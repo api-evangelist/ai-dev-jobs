@@ -90,8 +90,8 @@ Model Context Protocol servers that expose the API to agents.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Ai Dev Jobs Domain Security](https://apis.io/security/ai-dev-jobs/ai-dev-jobs-domain-security/)
-- [Ai Dev Jobs Vulnerability Disclosure](https://apis.io/security/ai-dev-jobs/ai-dev-jobs-vulnerability-disclosure/)
+- [AI Dev Jobs Domain Security](https://apis.io/security/ai-dev-jobs/ai-dev-jobs-domain-security/)
+- [AI Dev Jobs Vulnerability Disclosure](https://apis.io/security/ai-dev-jobs/ai-dev-jobs-vulnerability-disclosure/)
 
 ## Where to find this API
 
@@ -102,18 +102,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 8.9** — minimal · rubric 0.25.0 · scored 2026-10-23
+**Kin Score 9.4** — minimal · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 46.7 |
+| Discoverability | 53.3 |
 | Contract quality | 0.0 |
 | Contract governance | 0.0 |
-| Operational transparency | 10.5 |
+| Operational transparency | 9.5 |
 | Developer ergonomics | 16.7 |
 | Access clarity | 0.0 |
 
-**Agent readiness 10.1** — agent-aware
+**Agent readiness 11.5** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -138,6 +138,10 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | na |
 | Operation Distinctiveness | na |
+| MCP Tool Quality | half (partial credit) |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
 
